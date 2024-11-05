@@ -1,6 +1,9 @@
-// Use the theme first
-@use "_sass/pages-themes-midnight-v0.2.0-9-ge2bdf76" as *; // Adjust the path as necessary
-@use "jekyll-theme-midnight" as *; // Ensure this is the correct path
+// Update the import paths based on your directory structure
+@use "_sass/pages-themes-midnight" as *; // If it's in a _sass folder
+// OR
+@use "pages-themes-midnight" as *; // If it's in the same directory as style.scss
+
+@use "jekyll-theme-midnight" as *; // Ensure this file is also in the correct path
 
 /* Background and Text Colors */
 body {

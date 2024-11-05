@@ -1,7 +1,7 @@
 /* Error: Can't find stylesheet to import.
  *   ,
- * 2 | @use "_sass/pages-themes-midnight-v0.2.0-9-ge2bdf76" as *; // Adjust the path as necessary
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ * 2 | @use "_sass/pages-themes-midnight" as *; // If it's in a _sass folder
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *   '
  *   assets/css/style.scss 2:1  root stylesheet */
 
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @use \"_sass/pages-themes-midnight-v0.2.0-9-ge2bdf76\" as *; // Adjust the path as necessary\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   assets/css/style.scss 2:1  root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @use \"_sass/pages-themes-midnight\" as *; // If it's in a _sass folder\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   assets/css/style.scss 2:1  root stylesheet";
 }
