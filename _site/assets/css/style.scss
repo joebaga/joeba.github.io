@@ -1,9 +1,8 @@
-
-@import "_sass/pages-themes-midnight-v0.2.0-9-ge2bdf76";
-@use "jekyll-theme-midnight" as *; // or rename as needed
-@use "normalize" as *; // if normalize is a module
-@use "fonts" as *; // adjust if necessary
-@use "rouge-base16-dark" as *; // adjust if necessary
+// Import statements must come first
+@use "../_sass/jekyll-theme-midnight" as *;  // Import the midnight theme
+@use "../_sass/fonts" as *;                  // Import fonts if needed
+@use "../_sass/normalize" as *;              // Import normalize if needed
+@use "../_sass/rouge-base16-dark" as *;      // Import rouge if needed
 
 /* Background and Text Colors */
 body {
@@ -42,6 +41,7 @@ a:hover {
 .custom-button:hover {
   background-color: #ff9f1c; /* Orange on hover */
 }
+
 .project-section {
   padding: 20px;
   text-align: center;
@@ -72,6 +72,7 @@ a:hover {
   color: #ff9f1c; /* Accent color */
   margin-bottom: 20px;
 }
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -82,6 +83,87 @@ a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+.contact-section {
+  text-align: center;
+  padding: 40px;
+}
+
+input, textarea {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #e94560;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+/* Custom Button Styling */
+.custom-button {
+  background-color: #e94560; /* Pink button */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.custom-button:hover {
+  background-color: #ff9f1c; /* Orange on hover */
+}
+
+.project-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #162447; /* Dark blue card */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 300px;
+  color: #e0e0e0;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Subtle hover zoom */
+}
+
+.project-title {
+  color: #ff9f1c; /* Accent color */
+  margin-bottom: 20px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .contact-section {
   text-align: center;
   padding: 40px;

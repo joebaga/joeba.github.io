@@ -176,6 +176,7 @@ DEPENDENCIES
   jekyll
   jekyll-remote-theme
   jekyll-seo-tag
+  sass-embedded
 
 BUNDLED WITH
    2.5.22
