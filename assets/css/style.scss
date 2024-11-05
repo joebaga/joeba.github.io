@@ -1,13 +1,40 @@
----
----
 
-@import "{{ site.theme }}";
+@import "_sass/pages-themes-midnight-v0.2.0-9-ge2bdf76";
 
-.project-section {
-    padding: 20px;
-    background-color: #f4f4f4;
-  }
-  
-  .project-title {
-    color: #333333;
-  }
+/* Background and Text Colors */
+body {
+  background-color: #1a1a2e; /* Dark blue background */
+  color: #e0e0e0; /* Light grey text color */
+}
+
+/* Header */
+header {
+  background-color: #0f3460; /* Darker blue for header */
+  color: #e94560; /* Highlighted pink for header text */
+}
+
+/* Link and Hover Effects */
+a {
+  color: #00adb5; /* Turquoise links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff9f1c; /* Orange hover effect */
+  text-decoration: underline;
+}
+
+/* Custom Button Styling */
+.custom-button {
+  background-color: #e94560; /* Pink button */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.custom-button:hover {
+  background-color: #ff9f1c; /* Orange on hover */
+}
