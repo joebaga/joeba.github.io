@@ -61,11 +61,6 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
-    jekyll-remote-theme (0.4.3)
-      addressable (~> 2.0)
-      jekyll (>= 3.5, < 5.0)
-      jekyll-sass-converter (>= 1.0, <= 3.0.0, != 2.0.0)
-      rubyzip (>= 1.3.0, < 3.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
     jekyll-seo-tag (2.8.0)
@@ -90,7 +85,6 @@ GEM
       ffi (~> 1.0)
     rexml (3.3.9)
     rouge (4.4.0)
-    rubyzip (2.3.2)
     safe_yaml (1.0.5)
     sass-embedded (1.80.6)
       google-protobuf (~> 4.28)
@@ -174,7 +168,7 @@ DEPENDENCIES
   base64
   csv
   jekyll
-  jekyll-remote-theme
+  jekyll-sass-converter
   jekyll-seo-tag
   sass-embedded
 
