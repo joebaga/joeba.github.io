@@ -1,9 +1,9 @@
-/* Error: @use rules must be written before any other rules.
+/* Error: Can't find stylesheet to import.
  *   ,
- * 3 | @use "jekyll-theme-midnight" as *; // or rename as needed
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ * 2 | @use "_sass/pages-themes-midnight-v0.2.0-9-ge2bdf76" as *; // Adjust the path as necessary
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *   '
- *   assets/css/style.scss 3:1  root stylesheet */
+ *   assets/css/style.scss 2:1  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: @use rules must be written before any other rules.\a   \2577 \a 3 \2502  @use "jekyll-theme-midnight" as *; // or rename as needed\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   assets/css/style.scss 3:1  root stylesheet';
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @use \"_sass/pages-themes-midnight-v0.2.0-9-ge2bdf76\" as *; // Adjust the path as necessary\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   assets/css/style.scss 2:1  root stylesheet";
 }
