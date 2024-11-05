@@ -1,9 +1,7 @@
 
 @import "_sass/pages-themes-midnight-v0.2.0-9-ge2bdf76";
-@use "jekyll-theme-midnight" as *; // or rename as needed
-@use "normalize" as *; // if normalize is a module
-@use "fonts" as *; // adjust if necessary
-@use "rouge-base16-dark" as *; // adjust if necessary
+@import "jekyll-theme-midnight";
+
 
 /* Background and Text Colors */
 body {
